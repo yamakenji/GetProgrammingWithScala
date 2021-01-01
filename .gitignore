@@ -139,6 +139,9 @@ metals.h2.db
 metals.lock.db
 
 .idea/
+.metals/
+
+.scalafmt.conf
 
 
 # End of https://www.toptal.com/developers/gitignore/api/scala,sbt,intellij,vscode
