@@ -1,0 +1,34 @@
+@startuml
+
+title Lesson7
+
+class Robot {
+    name
+    welcome()
+}
+
+class ItalianRobot extends Robot {
+    name
+    welcome()
+}
+
+class EnglishRobot extends Robot {
+    name
+    country
+    welcome()
+}
+
+class Beverage {
+    request()
+}
+
+class ColdBeverage extends Beverage {
+    request()
+}
+
+class HotBeverage extends Beverage {
+    request()
+}
+
+
+@enduml
