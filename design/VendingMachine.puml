@@ -1,0 +1,19 @@
+@startuml
+
+title Lesson8 The Vending Machine
+
+class VendingMachine
+
+class Money
+
+class Item
+
+class ItemName
+class ItemPrice
+
+VendingMachine o- Item
+VendingMachine -- Money
+Item o-- ItemPrice
+Item o-- ItemName
+
+@enduml
