@@ -17,9 +17,30 @@ class VendingMachine {
         }
     }
 
-    def isProductAvailabe(product: String): Boolean = ???
+    def isProductAvailabe(product: String): Boolean = {
+        val productQuantity = {
+            if (product == "chocolate") chocolateBar
+            else if (product == "granola") granolaBar
+            else 0
+        }
+        productQuantity > 0
+    }
 
-    def isMoneyEnough(product: String, money: Double): Boolean = ???
+    def isMoneyEnough(product: String, money: Double): Boolean = {
+        val cost = if (product == "chocolate") 1.5 else 1
+        money >= cost
+    }
 
-    def completeRequest(product: String, money: Double): String = ???
+    def completeRequest(product: String, money: Double): String = {
+        collectMoney(money)
+        releaseProduct(product)
+        s"There you go! Have a $product bar"
+    }
+
+    def collectMoney(money: Double) =
+        totalMoney += money
+
+    def releaseProduct(product: String) = 
+        if (product == "chocolate") chocolateBar -= 1
+        else if (product == "granola") granolaBar -= 1
 }
