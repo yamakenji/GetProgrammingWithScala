@@ -16,6 +16,7 @@ object Main extends App {
     marksSum += mark
     marksCount += 1
     mark
+
   }
 
 //  println("---markExam---")
