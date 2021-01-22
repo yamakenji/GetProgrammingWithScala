@@ -8,3 +8,9 @@ https://github.com/DanielaSfregola/get-programming-with-scala
 ```sbt
 $ sbt new scala/scala-seed.g8
 ```
+
+## Unit 1
+
+### Lesson 8
+
+## Unit2
